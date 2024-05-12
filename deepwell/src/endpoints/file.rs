@@ -62,6 +62,8 @@ pub async fn file_upload(
     ctx: &ServiceContext<'_>,
     params: Params<'static>,
 ) -> Result<UploadFileOutput> {
+    // FIXME file upload endpoint
+    /*
     let input: UploadFile = params.parse()?;
 
     info!(
@@ -73,6 +75,8 @@ pub async fn file_upload(
     );
 
     FileService::upload(ctx, input).await
+    */
+    todo!()
 }
 
 pub async fn file_edit(
